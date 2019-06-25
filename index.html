@@ -29,16 +29,17 @@
             <div class="nav-wrapper" id="nav1">
          
             
-                <a href="#" class="brand-logo right black-text">helan jose</a>
+                <a href="#" class="brand-logo right white-text">helan jose</a>
                 <a href="#" class="sidenav-trigger black-text" data-target="mobile-links">
                     <i class="material-icons">menu</i>
                 </a>
-                <ul class="hide-on-med-and-down black-text"> 
-                <li><a href="#">home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">resume</a></li>
-                <li><a href="#">contact</a></li>
+                <ul class="hide-on-med-and-down black-text "> 
+                  <li><a href="#">home</a></li>
+                  <li><a href="#aboutme">About Me</a></li>
+                  <li><a href="#skills">skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">My projects</a></li>
+                  <li><a href="#work">Work Experience</a></li>
             </ul>
         </div>
         </nav>
@@ -56,16 +57,19 @@
 
 
 
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">resume</a></li>
-                        <li><a href="#">contact</a></li>
+                      <li><a href="#">home</a></li>
+                      <li><a href="#aboutme">About Me</a></li>
+                      <li><a href="#skills">skills</a></li>
+                      <li><a href="#education">Education</a></li>
+                      <li><a href="#projects">My projects</a></li>
+                      <li><a href="#work">Work Experience</a></li>>
         </ul>
 
 </div>
+
+
     <div class="divider"></div>
-    <div class="section" id="aboutme">
+    <div class="section scrollspy black "  id="aboutme">
      
   
 
@@ -86,7 +90,7 @@
                 <img class="materialboxed circle" style="width:330px; height:300px" src="images/helu4.jpg">
             </div>
 
-            <div class="col white l4 " id="personal info">
+            <div class="col white black-text l4 " id="personal info">
                     <h5>personal info</h5>
                     <table >
                             <thead>
@@ -132,7 +136,7 @@
 
  
     <div class="divider"></div>
-    <div class="section">
+    <div class="section scrollspy" id="skills">
         <h3 class="black-text center">MY Skills</h3> 
       <div class="row">
         <div class="col l8 m8 s12 ">
@@ -150,9 +154,9 @@
               labels: ['C', 'C++', 'java', 'python', 'php','sql', 'Java Script','Jquery', 'HTML','CSS','BOOTSTRAP',"Materialize css"],
               datasets: [{
                   label: 'My Skills',
-                  backgroundColor: 'rgba(7, 150, 119, 0.959)',
+                  backgroundColor: ' teal',
                   borderColor: 'black',
-                  data: [30, 10, 5, 2, 20, 30, 45,50,60,90,78,43]
+                  data: [70, 80, 5, 62, 20, 70, 85,80,98,90,88,73]
               }]
           },
       
@@ -168,8 +172,8 @@
     </div>
   <!--education images cards--> 
     <div class="divider"></div>
-    <div class="section">
-        <h3 class="teal-text center">Education</h3>       
+    <div class="section scrollspy" id="education">
+        <h3 class="black-text center">Education</h3>       
 
       <div class="container">
 
@@ -274,7 +278,7 @@
 
 <!--gallery-->
 <div class="divider"></div>
-<div class="section black" style="background-image: url(images/blurr2.jpg); ">
+<div class="section scrollspy black" id="projects" style="background-image: url(images/blurr2.jpg); ">
   <div class="row">
     <div class="col">
         <table>
@@ -353,7 +357,7 @@
 <!--work experience-->
 <h3 class="teal-text center">Work Experience</h3>
 <div class="divider"></div>
-    <div class="section">
+    <div class="section scrollspy" id="work">
         <div class="row">
             <div class="col l6 m7 s12 ">
                 <div class="col m7 s12">
@@ -474,7 +478,10 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
        
-
+//scroll spy
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
 </script>
 
 
