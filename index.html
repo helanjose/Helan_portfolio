@@ -23,13 +23,18 @@
     <body>
         <!--parallax background image-->
 <div class="parallax-container">
-    <div class="parallax"><img src="images/bg2.jpeg" style="height: 500px"></div>
+    <div class="parallax"><img src="images/bg6.jpeg">
+    
+     
+        
+    </div>
+
 
         <nav>
             <div class="nav-wrapper" id="nav1">
          
             
-                <a href="#" class="brand-logo right white-text">helan jose</a>
+                
                 <a href="#" class="sidenav-trigger white-text" data-target="mobile-links">
                     <i class="material-icons white-text">menu</i>
                 </a>
@@ -51,7 +56,7 @@
                           <img src="images/hdbg2.jpeg" style="height: 300px;width:300px">
                         </div>
                         <a href="#user"><img class="circle" src="images/IMG-8407.JPG" style="width: 100px;height:100px"></a>
-                        <a href="#name"><span class="white-text name">Helan Jose</span></a>
+ 
                         <a href="#email"><span class="white-text email">helankjose@gmail.com</span></a>
                       </div></li>
 
@@ -64,68 +69,81 @@
                       <li><a href="#projects">My projects</a></li>
                       <li><a href="#work">Work Experience</a></li>>
         </ul>
+        <div class="caption center-align white-text">
+            <h3>Helan Jose</h3><br>
 
+            <h5 class="caption center-align white-text" style="font-style: italic">Welcome to My Website..<br>
+           <br> I am a Web Developer who is passionate about learning new technologies& creating mind blowing web applications</h5>
+            </div>
 </div>
 
 
     <div class="divider"></div>
-    <div class="section scrollspy black "  id="aboutme">
+    <div class="section scrollspy " style="border-color: rgb(238, 231, 233);"  id="aboutme">
      
   
 
     <div class="row ">
         <div class="col  l4 m4 s12" id="my_story">
-            <h5>My story</h5>
-            <p>A dynamic, highly motivated and results-oriented<br>
-               IT professional with diverse skills in Front End Development.<br>
-               Skilled in HTML,CSS Bootstrap,Materialize css ,Java Script and Python.
-                    
-                    </p>
+            <h5 id="heading-mystory">My story</h5>
+              <div class="row">
+                <div class="col l12 m12 s12">
+                    <p>A dynamic, highly motivated and results-oriented IT professional with diverse skills in Front End Development.Skilled in HTML,CSS Bootstrap,Materialize css ,Java Script and Python.
+                             
+                             </p>
+                </div>
+                <div class="col l12 m12 s12">
                     <a href="images/helan_resume.pdf" download="helan_resume.pdf">Download Resume</a>
+              </div>
+            </div>
+                    
         </div>
         <div class="col  l2.5 m3 s12" id="personal_img">
                 <img class="materialboxed circle" style="width:330px; height:300px" src="images/helu4.jpg">
             </div>
 
             <div class="col white black-text l4 m4 s12 " id="personal info">
-                    <h5>personal info</h5>
-                    <table >
-                            <thead>
-                                    <tr>
-                                        <th>personal info</th>
-                                        
+                    <h5 id="thead" >Contact Info</h5>
+                    <div class="row">
+                      <div class="col l12 m12 s12">
+                          <table id="table">
+                              <thead>
+                                      <tr>
+                                          <th >personal information</th>
+                                          
+                                      </tr>
+                                    </thead>
+                      
+                              <tbody>
+                                <tr>
+                                  <td>Name: Helan</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Age: 25</td>
+                               
+                                </tr>
+                                <tr>
+                                  <td>phone: 206-887-6726</td>
+                                  
+                                </tr>
+                                <tr>
+                                      <td>email: helankjose@gmail.com</td>
+                                      
                                     </tr>
-                                  </thead>
-                    
-                            <tbody>
-                              <tr>
-                                <td>Name:Helan</td>
-                                
-                              </tr>
-                              <tr>
-                                <td>Age:25</td>
-                             
-                              </tr>
-                              <tr>
-                                <td>phone:206-887-6726</td>
-                                
-                              </tr>
-                              <tr>
-                                    <td>email:helankjose@gmail.com</td>
-                                    
-                                  </tr>
-                              <tr>
-                                  <td>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-github"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fas fa-envelope-square"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                  </td>
-                                   
-                              </tr>
-                            </tbody>
-                          </table>
+                                <tr>
+                                    <td>
+                                         
+                                          <a href="https://github.com/helanjose"><i class="fab fa-github"></i></a>
+                                         <a href="https://www.linkedin.com/in/helan-k-jose-50b359121/"><i class="fab fa-linkedin-in"></i></a>
+                                    </td>
+                                     
+                                </tr>
+                              </tbody>
+                            </table>
+                      </div>
+                    </div>
+                   
                                 
                 </div>
     </div>
@@ -133,36 +151,93 @@
 
  
     <div class="divider"></div>
-    <div class="section scrollspy" id="skills">
+    <div class="section scrollspy"  id="skills">
         <h3 class="black-text center">MY Skills</h3> 
       <div class="row">
-        <div class="col l8 m8 s12 ">
-      
-      <canvas id="myChart"></canvas>
-      <script>
         
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var chart = new Chart(ctx, {
-          // The type of chart we want to create
-          type: 'bar',
-      
-          // The data for our dataset
-          data: {
-              labels: ['C', 'C++', 'java', 'python', 'php','sql', 'Java Script','Jquery', 'HTML','CSS','BOOTSTRAP',"Materialize css"],
-              datasets: [{
-                  label: 'My Skills',
-                  backgroundColor: ' teal',
-                  borderColor: 'black',
-                  data: [70, 80, 5, 62, 20, 70, 85,80,98,90,88,73]
-              }]
-          },
-      
-          // Configuration options go here
-          options: {}
-      });
+          <div class="col l4 m4 s12" id="collection" >
+              <ul class="collection">
+                  <li class="collection-item avatar">
+            
+                    <span class="title" style="color: teal">Front End </span>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>Materialize CSS</li>
+                    </ul>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  <li class="collection-item avatar">
+                  
+                      <span class="title" style="color: teal">Back End </span>
+                      <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Bootstrap</li>
+                          <li>Materialize CSS</li>
+                        </ul>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  <li class="collection-item avatar">
+                      <span class="title" style="color: teal">Back End </span>
+                    <span class="title">Other Programming languages</span>
+                    <ul>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                      </ul>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </li>
+                  
+                  </li>
+                </ul>
+                          
 
 
-      </script>
+
+
+
+
+
+
+          </div>
+        
+        <div class="col l8 m8 s12 ">
+           <div class="row">
+             <div class="col l12 m12 s12">
+                   
+                <canvas id="myChart"></canvas>
+                <script>
+                  
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    // The type of chart we want to create
+                    type: 'bar',
+                
+                    // The data for our dataset
+                    data: {
+                        labels: ['C', 'C++', 'java', 'python', 'php','sql', 'Java Script','Jquery', 'HTML','CSS','BOOTSTRAP',"Materialize css","node js"],
+                        datasets: [{
+                            label: 'My Skills',
+                            backgroundColor: ' teal',
+                            borderColor: 'white',
+                            data: [70, 80, 5, 62, 20, 70, 85,80,98,90,88,73,70]
+                        }]
+                    },
+                
+                    // Configuration options go here
+                    options: {}
+                });
+          
+          
+                </script>
+
+         </div>
+             </div>
+           </div>
+     
 </div>
 </div>
 
@@ -190,7 +265,7 @@
       
                 </div>
       
-                <div class="card-content teal" id="image-content1">
+                <div class="card-content " id="image-content1">
       
                   Master of Computer Application
                   
@@ -220,7 +295,7 @@
       
                 </div>
       
-                <div class="card-content teal" id="image-content2" >
+                <div class="card-content" id="image-content2" >
       
                   Bachelor Of Computer Application
       
@@ -252,7 +327,7 @@
       
                 </div>
       
-                <div class="card-content teal " id="image-content3">
+                <div class="card-content  " id="image-content3">
       
                     Higher secondary Education
                 </div>
@@ -278,7 +353,7 @@
 <div class="section scrollspy black" id="projects" style="background-image: url(images/blurr2.jpg); ">
   <h3 class="center">My Projects</h3>
   <div class="row">
-    <div class="col">
+    <div class="col l4 m4 s12">
         <table>
             <thead>
               <tr>
@@ -294,21 +369,22 @@
                 <td>Travel website which includes<br>
                    top attractions in the city,<br>
                    Hotel information &Flight Info </td>
-                <td><a class="black" href="https://danhunlee.github.io/projectNumberOne/">Visit site</a></td>
-              </tr>
+                <td><a class="black" href="https://danhunlee.github.io/projectNumberOne/">Visit deployed version</a><br> <a class="black" href="https://github.com/danhunlee/projectNumberOne">code on GitHub</td>
               <tr>
                   <td>Portfolio using Bootstrap</td>
                   <td>Portfolio of Apple CEO<br>
                      Using Bootstrap,<br>
                       </td>
-                  <td><a class="black" href="https://helanjose.github.io/Bootstrap-Portfolio/">Visit site</a></td>
+                  <td><a class="black" href="https://helanjose.github.io/Bootstrap-Portfolio/">Visit deployed version
+                  </a> <br> <a class="black" href="https://github.com/helanjose/Bootstrap-Portfolio">code on GitHub</td>
                 </tr>
                 <tr>
                     <td>Trivial Game</td>
                     <td>multiple choice questions<br>
                        timer related game<br>
                         </td>
-                    <td><a class="black" href="https://helanjose.github.io/Bootstrap-Portfolio/">Visit site</a></td>
+                    <td><a class="black" href=" https://helanjose.github.io/Trivial-game/">Visit deployed version</a>
+                      <br> <a class="black" href="https://github.com/helanjose/Trivial-game">code on GitHub</td>
                   </tr>
                   
             
@@ -324,15 +400,20 @@
     <div class="carousel">
       <div class="carousel-item">
           <img src="images/project1page1.JPG" style="width: 400px;height:200px">
-          <p>Travel website home page</p>
+          <div class="row">
+            <div class="col l12 s12 ">
+              <a href="images/TRAVEL THE WORLD-readme.pdf">About the project</a>
+            </div>
+          </div>
+          
       </div>
       <div class="carousel-item">
           <img src="images/project1page2.JPG" style="width: 400px;height:200px">
-          <p>Top Attractions in the city</p>
+          <a href="images/TRAVEL THE WORLD-readme.pdf">About the project</a>
       </div>
       <div class="carousel-item">
           <img src="images/project1page3.5.JPG"style="width:400px;height:200px">
-          <p>Find Flight<p>
+          <a href="images/TRAVEL THE WORLD-readme.pdf">About the project</a>
       </div>
       <div class="carousel-item">
           <img src="images/list_doctors_1.png"style="width: 400px;height:200px">
@@ -344,7 +425,7 @@
       </div>
       <div class="carousel-item">
           <img src="images/trvial_game1.JPG"style="width: 400px;height:200px">
-          <p>Trivial game</p>p>
+          <p>Trivial game</p>
       </div>
         
       </div>
@@ -452,17 +533,17 @@
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="www.linkedin.com/in/helan-k-jose-50b359121">linkedin</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/helan-k-jose-50b359121/">linkedin</a></li>
           <li><a class="grey-text text-lighten-3" href="https://github.com/helanjose">Git Hub</a></li>
-         
+          
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2014 Copyright Text
-    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    © 2019 Copyright
+    
     </div>
   </div>
 </footer>                             

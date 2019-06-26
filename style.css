@@ -2,7 +2,22 @@
     height: 350px;
     margin-right: 20px;
     margin-left: 20px;
-    color: yellow;
+    color: black;
+    font-style: italic;
+    font-size: 25px;
+  
+}
+#thead{
+   
+    font-family: fantasy;
+    color:black;
+    text-align: left;
+}
+#table{
+    
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;  
 }
 #personal_img{
     
@@ -10,13 +25,22 @@
     margin-right: 30px;
    
 }
-#myChart{
-    margin-left: 200px;
-
+#collection{
+   margin-top: 30px; 
+    
    
+}
+#heading-mystory{
+    font-family: fantasy;
+    color:black;
+    text-align: center;
+    
 }
 #nav1{
     background:black;
     color:white;
     padding: 0px 20px;
 }
+.parallax-container {
+    height: "500px";
+  }
